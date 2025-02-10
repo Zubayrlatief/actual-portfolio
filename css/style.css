@@ -1137,7 +1137,6 @@ a{
 }
 .tokyo_tm_modalbox .service_popup_informations{
 	width: 100%;
-	height: auto;
 	clear: both;
 	float: left;
 }
@@ -1150,14 +1149,19 @@ a{
 .tokyo_tm_modalbox .service_popup_informations .image img{
 	position: relative;
 	min-width: 100%;
+	
 	opacity: 0;
 }
 .tokyo_tm_modalbox .service_popup_informations .image .main{
 	position: absolute;
 	top: 0px;
+	margin-left:  25%;
+	
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
+	width: 50%;
+	height: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
