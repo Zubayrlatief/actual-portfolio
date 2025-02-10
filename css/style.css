@@ -609,7 +609,14 @@ a{
 	margin-bottom: 35px;
 }
 .tokyo_tm_about .top_author_image img{
-	min-width: 100%;
+	justify-content: center;
+	display: flex;
+	align-content: center;
+	
+	min-width: 60%;
+	height: 80%;
+
+
 }
 .tokyo_tm_about .about_title{
 	width: 100%;
