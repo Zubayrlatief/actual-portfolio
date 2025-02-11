@@ -2176,14 +2176,13 @@ body.modal{
 	height: auto;
 	clear: both;
 	float: left;
-	padding: 100px 0px 100px 0px;
+	padding: 5px 0px 10px 0px;
 }
 .tokyo_tm_contact .map_wrap{
 	width: 100%;
-	height: auto;
+    height: 23rem;
 	clear: both;
 	float: left;
-	margin-bottom: 50px;
 }
 .tokyo_tm_contact .fields{
 	width: 100%;
@@ -2218,7 +2217,7 @@ body.modal{
 	border: 1px solid rgba(0,0,0,.2);
 	height: 120px;
 	resize: none;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	background-color: transparent;
 }
 .tokyo_tm_contact .fields .last textarea:focus{
@@ -2243,6 +2242,23 @@ body.modal{
 	text-align: left;
 	font-weight: 500;
 }
+
+/* Change button color */
+.tokyo_tm_button .contact-btn {
+    background-color: #FF5733; /* New color for the button */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tokyo_tm_button .contact-btn:hover {
+    background-color: #e14b2d; /* Darker shade on hover */
+}
+
+
 
 /*---------------------------------------------------*/
 /*	10) TOKYO MAGIC CURSOR

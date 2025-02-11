@@ -264,20 +264,20 @@
 								<ul>
 									<li>
 										<div class="list_inner">
-											<h3>777+</h3>
+											<h3>15+</h3>
 											<span>Projects Completed</span>
 										</div>
 									</li>
 									<li>
 										<div class="list_inner">
-											<h3>3K</h3>
-											<span>Happy Clients</span>
+											<h3>1-2</h3>
+											<span>Years of Experience</span>
 										</div>
 									</li>
 									<li>
 										<div class="list_inner">
-											<h3>9K+</h3>
-											<span>Lines of Code</span>
+											<h3>-25%</h3>
+											<span>Crypto portfolio</span>
 										</div>
 									</li>
 								</ul>
@@ -957,39 +957,35 @@
 								</div>
 							</div>
 							<div class="map_wrap">
-								<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="355" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net">fmovies</a><br><style>.mapouter{position:relative;text-align:right;height:355px;width:100%;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:355px;width:100%;}</style></div></div>
+								<div class="mapouter"><div class="gmap_canvas"><iframe width="800" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=cape%20town%20sybrand%20park&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://embedgooglemap.net/124/">it 123movies</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:400px;}</style><a href="https://www.embedgooglemap.net">embed google map on website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:600px;}</style></div></div>
 
 								<!-- Get your API here https://www.embedgooglemap.net -->
 
 							</div>
-							<div class="fields">
-								<form action="/" method="post" class="contact_form" id="contact_form" autocomplete="off">
-									<div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
-									<div class="empty_notice"><span>Please Fill Required Fields</span></div>
-									<div class="first">
-										<ul>
-											<li>
-												<input id="name" type="text" placeholder="Name">
-											</li>
-											<li>
-												<input id="email" type="text" placeholder="Email">
-											</li>
-										</ul>
-									</div>
-									<div class="last">
-										<textarea id="message" placeholder="Message"></textarea>
-									</div>
-									<div class="tokyo_tm_button" data-position="left">
-										<a id="send_message" href="#">
-											<span>Send Message</span>
-										</a>
-									</div>
-
-									<!-- If you want to change mail address to yours, please open modal.php and go to line 4 -->
-
-								</form>
+							<div class="tokyo_tm_contact">
+								<div class="fields">
+									<form action="https://formspree.io/f/mdkalajg" method="POST">
+										<div class="first">
+											<ul>
+												<li>
+													<input type="text" name="name" placeholder="Name" required>
+												</li>
+												<li>
+													<input type="email" name="email" placeholder="Email" required>
+												</li>
+											</ul>
+										</div>
+										<div class="last">
+											<textarea name="message" placeholder="Message" required></textarea>
+										</div>
+										<div class="tokyo_tm_button" data-position="left">
+											<button type="submit" class="contact-btn">
+												<span>Send Message</span>
+											</button>
+										</div>
+									</form>
+								</div>
 							</div>
-						</div>
 					</div>	
 				</div>
 				<!-- /CONTACT -->
@@ -1007,6 +1003,29 @@
 	<!-- / WRAPPER ALL -->
 	
 <!-- SCRIPTS -->
+<script>
+	const form = document.querySelector("form");
+	form.addEventListener("submit", async (e) => {
+	  e.preventDefault();
+	  
+	  const formData = new FormData(form);
+	  const response = await fetch(form.action, {
+		method: form.method,
+		body: formData,
+		headers: {
+		  "Accept": "application/json"
+		}
+	  });
+  
+	  if (response.ok) {
+		alert("Your message has been sent successfully!");
+		form.reset();
+	  } else {
+		alert("Oops! There was a problem submitting your form.");
+	  }
+	});
+  </script>
+  
 <script src="js/jquery.js"></script>
 <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->	
 <script src="js/plugins.js"></script>
