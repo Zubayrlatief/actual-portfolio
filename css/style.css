@@ -601,7 +601,9 @@ a{
 	        transition: all .3s ease;
 }
 .tokyo_tm_about .top_author_image{
-	width: 100%;
+	width: 50%;
+	height: 50%;
+	margin-left: 20%;
 	height: auto;
 	clear: both;
 	float: left;
